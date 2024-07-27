@@ -1,0 +1,11 @@
+.app {
+    margin: 0 auto;
+    background: var(--background-main-gray);
+    width: 971px;
+}
+
+@media screen and (width <= 971px) {
+    .app {
+        width: 100%;
+    }
+}
