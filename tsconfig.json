@@ -3,7 +3,8 @@
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "ESNext",
-    "target": "es5",
+    "target": "es2015",
+    "lib": ["dom", "es2015", "es2016", "es2017", "es2018", "esnext"],
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
@@ -12,7 +13,8 @@
       "*": ["./src/*"]
     },
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true
   },
   "ts-node": {
     "compilerOptions": {
