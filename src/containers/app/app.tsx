@@ -3,8 +3,8 @@ import {
     required, validateValue,
     birthdateValidator,
 } from '../../utils/validators';
-import styles from './app.module.css';
-import { Paragraph, Input } from '../index';
+import { LayoutMain } from '../../components';
+import { HomePage } from '../../pages';
 
 const App = () => {
     const [name, setName] = useState<string>('');
@@ -22,12 +22,9 @@ const App = () => {
     };
 
     return (
-        <div className={styles.app}>
-            Hello World!
-            <Paragraph color="red" text="Создайте аккаунт, чтобы выкладывать работы и общаться в сообществе единомышленников" />
-            <Input type="text" placeholder="ДД/ММ/ГГГГ" value={name} error={!!nameError} errorText={nameError || ''} onChange={handleNameChange} />
-            <Input type="text" placeholder="Я плейсхолдер" value="Я Петя и я задизаблен" disabled />
-        </div>
+        <LayoutMain>
+            <HomePage />
+        </LayoutMain>
     );
 };
 

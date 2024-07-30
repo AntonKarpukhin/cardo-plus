@@ -14,6 +14,7 @@
     "custom-property-empty-line-before": "never",
     "declaration-no-important": true,
     "no-empty-source": true,
-    "block-no-empty": true
+    "block-no-empty": true,
+    "selector-class-pattern": null
   }
 }

@@ -1,0 +1,13 @@
+.LayoutMain {
+    margin: 0 auto;
+    background: var(--background-main-gray);
+    width: 390px;
+    height: 100vh;
+    padding: 10px 16px 34px;
+}
+
+@media screen and (width <= 390px) {
+    .LayoutMain {
+        width: 100%;
+    }
+}

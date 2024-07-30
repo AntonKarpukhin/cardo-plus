@@ -1,5 +1,8 @@
-import App from './app/app';
 import Paragraph from './paragraph/paragraph';
 import Input from './input/input';
+import Button from './button/button';
+import LayoutMain from './layout-main/layout-main';
 
-export { App, Paragraph, Input };
+export {
+    Paragraph, Input, Button, LayoutMain,
+};
