@@ -1,0 +1,160 @@
+.dateInputWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    padding: 15px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid var(--border-gray);
+}
+
+.DatePicker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.dateInput {
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dateInput:focus {
+    outline: none;
+    border-color: #fa8072;
+}
+
+.reactDatepicker {
+    border: none;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 25px;
+    background-color: var(--color-white);
+}
+
+.reactDatepickerHeader {
+    background-color: transparent;
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+.reactDatepickerCurrentMonth {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.reactDatepickerDayName,
+.reactDatepickerDay {
+    width: 2.5em;
+    line-height: 2.5em;
+    margin: 0.2em;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.reactDatepickerDayName {
+    font-weight: normal;
+    color: #888;
+}
+
+.reactDatepickerDay {
+    font-weight: bold;
+    color: #333;
+}
+
+.reactDatepickerDaySelected {
+    background-color: #fa8072;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.reactDatepickerDayKeyboardSelected {
+    background-color: #fa8072;
+    border-radius: 50%;
+}
+
+.reactDatepickerDayToday {
+    font-weight: bold;
+    color: #fa8072;
+}
+
+.calendarIcon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.yearDropdown {
+    border: none;
+    background-color: var(--color-white);
+    cursor: pointer;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 22px;
+    color: var(--color-black);
+}
+
+.customHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.wrapperButton {
+    display: flex;
+    gap: 28px;
+}
+
+.navigationButton {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 15px;
+    height: 24px;
+}
+
+.arrow {
+    width: 12px;
+    height: 16px;
+}
+
+.navigationIcon {
+    font-size: 16px;
+    color: #fa8072;
+}
+
+.currentMonth {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.navigationIconPrevious,
+.navigationIconNext {
+    font-size: 18px;
+    color: #fa8072;
+    font-weight: bold;
+}
+
+.monthDate {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: 22px;
+    color: var(--color-black);
+}

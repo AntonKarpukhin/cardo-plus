@@ -4,15 +4,32 @@
     row-gap: 4px;
     padding: 0;
     margin: 0;
-    height: 74px;
     box-sizing: border-box;
+    position: relative;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputIcon {
+    position: absolute;
+    right: 12px;
+    width: 16px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
 }
 
 .input {
     width: 358px;
     padding: 15px;
-    border: 1px solid #808080;
-    font-family: Rubik, sans-serif;
+    border: 1px solid var(--border-gray);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -20,11 +37,11 @@
     letter-spacing: -0.24px;
     height: 50px;
     box-sizing: border-box;
+    background: transparent;
 }
 
 .input::placeholder {
-    color: #808080;
-    font-family: Rubik, sans-serif;
+    color: var(--color-gray);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -33,14 +50,32 @@
 }
 
 .input:disabled {
-    background: white;
-    font-family: Rubik, sans-serif;
+    background: transparent;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: -0.24px;
     color: black;
+}
+
+.input:active {
+    border: 1px solid var(--border-gray);
+}
+
+input:-webkit-autofill {
+    background-color: transparent;
+    color: var(--color-black);
+    border: 1px solid var(--border-gray);
+    box-shadow: 0 0 0 1000px var(--background-main-gray) inset;
+    -webkit-text-fill-color: var(--color-black);
+}
+
+input:-webkit-autofill:focus {
+    background-color: transparent;
+    border: 1px solid var(--border-gray);
+    box-shadow: 0 0 0 1000px var(--background-main-gray) inset;
+    -webkit-text-fill-color: var(--color-black);
 }
 
 @media screen and (width < 390px) {
@@ -50,13 +85,10 @@
 }
 
 .error {
-    color: #ff4310;
-    font-family: Rubik, sans-serif;
+    color: var(--color-red-error);
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-
-    /* 153.846% */
     letter-spacing: -0.24px;
 }

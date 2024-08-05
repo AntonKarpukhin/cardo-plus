@@ -43,6 +43,16 @@ module.exports = {
         'react/prop-types': 0,
         'linebreak-style': ['error', 'windows'],
         'no-plusplus': 'off',
-        'button-has-type': 'off'
+        'button-has-type': 'off',
+        "jsx-a11y/label-has-associated-control": ["error", {
+            "required": {
+                "some": ["nesting", "id"]
+            }
+        }],
+        "jsx-a11y/label-has-for": ["error", {
+            "required": {
+                "some": ["nesting", "id"]
+            }
+        }]
     },
 };

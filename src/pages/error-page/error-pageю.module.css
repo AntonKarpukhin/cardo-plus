@@ -1,0 +1,28 @@
+.ErrorPage {
+    box-sizing: border-box;
+    background-color: var(--background-main-gray);
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.title {
+    color: var(--color-red);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90px;
+    text-align: center;
+}
+
+.link {
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: var(--color-red);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90px;
+    text-align: center;
+    margin-top: 50px;
+}
