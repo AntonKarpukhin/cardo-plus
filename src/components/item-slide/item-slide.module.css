@@ -1,0 +1,51 @@
+.itemSlide {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%; 
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  height: 100%;
+}
+
+.image {
+  margin: 0 auto 56px
+}
+
+.title {
+  color: var(--background-dark);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.description {
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-gray);
+  margin: 16px 0 0;
+}
+
+.link {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  text-decoration: none;
+  color: var(--color-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

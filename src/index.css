@@ -8,6 +8,9 @@
     --color-red-error: rgb(227 0 23);
     --border-gray: rgb(128 128 128);
     --button-red: rgb(255 67 16);
+    --overlay: rgba(0, 0, 0, 0.8);
+    --slider-gray: rgb(219 219 217);
+    --background-dark: rgb(43 43 44);
 }
 
 * {
@@ -21,3 +24,12 @@
 
     /* background-color: var(--background-main-gray); */
 }
+
+@font-face {
+    font-family: 'Grtsk Tera';
+    src: url('../public/fonts/GrtskTera-Bold.woff2') format('woff2'),
+         url('../public/fonts/GrtskTera-Bold.woff') format('woff'),
+         url('../public/fonts/GrtskTera-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }

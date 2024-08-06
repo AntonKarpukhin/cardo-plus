@@ -1,0 +1,43 @@
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 46px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.dots {
+  text-align: center;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 5px;
+  background-color: var(--slider-gray);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color:var(--color-red);
+}
