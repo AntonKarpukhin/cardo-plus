@@ -12,7 +12,7 @@ const HomePage: FC = () => (
         />
         <div className={styles.buttons}>
             <Button color="red" text="Зарегистрироваться" type="button" path="/createProfile" />
-            <Button color="white" text="Войти" type="button" />
+            <Button color="white" text="Войти" type="button" path="/login" />
         </div>
     </div>
 );
