@@ -25,3 +25,14 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.skip {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color-gray);
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+}

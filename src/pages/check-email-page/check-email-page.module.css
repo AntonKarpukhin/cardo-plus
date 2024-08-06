@@ -1,0 +1,22 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 46px);
+}
+
+.header {
+  margin-top: 28px;
+}
+
+.paragraph {
+  margin-top: 16px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button {
+padding: 14px
+}
