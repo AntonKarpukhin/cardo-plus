@@ -21,7 +21,7 @@ const RecoverPasswordPage = () => {
                     <Input
                         type="text"
                         placeholder="Имя пользователя / email"
-                        datatype="text"
+                        datatype="userName"
                         onChange={handleInputChange}
                         value={input?.userName || ''}
                     />
