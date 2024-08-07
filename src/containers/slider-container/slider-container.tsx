@@ -1,9 +1,6 @@
 import React, { FC, useState } from 'react';
 import ItemSlide from '../../components/item-slide/item-slide';
 import styles from './slider-container.module.css';
-import image1 from '../../../public/slider-screen.png';
-import image2 from '../../../public/slider-events.png';
-import image3 from '../../../public/slider-video.png';
 
 const SliderContainer: FC = () => {
     const [currentSlide, setCurrentSlide] = useState<number>(0);
@@ -13,7 +10,7 @@ const SliderContainer: FC = () => {
     const slides = [
         {
             id: 1,
-            image: image1,
+            image: '/slider-screen.png',
             title: 'Лента работ участников',
             description: 'Смотри конкурсные работы участников и загружай свои',
             link: false,
@@ -21,7 +18,7 @@ const SliderContainer: FC = () => {
         },
         {
             id: 2,
-            image: image2,
+            image: '/slider-events.png',
             title: 'Программа мероприятий',
             description: 'Выбирай интересные тебе мероприятия и подавай заявку',
             link: false,
@@ -29,8 +26,8 @@ const SliderContainer: FC = () => {
         },
         {
             id: 3,
-            image: image3,
-            title: 'Онлайн-трансляции с Гранд-финала',
+            image: '/slider-video.png',
+            title: 'Онлайн-трансляции с Гранд-финала',
             description: 'Если не сможешь быть на мероприятии очно — подключайся онлайн',
             link: true,
             status: 'back',
