@@ -24,7 +24,7 @@ const LoginPage = () => {
                     <Input
                         type="text"
                         placeholder="Логин"
-                        datatype="text"
+                        datatype="login"
                         onChange={handleInputChange}
                         value={input?.login || ''}
                     />
