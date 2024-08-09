@@ -59,11 +59,11 @@ const SliderContainer: FC = () => {
         const minSwipeDistance = 50;
 
         if (distance > minSwipeDistance) {
-            setCurrentSlide((prev) => (prev + 1) % slides.length);
+            setCurrentSlide((prev) => (prev < slides.length - 1 ? prev + 1 : prev));
         }
 
         if (distance < -minSwipeDistance) {
-            setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+            setCurrentSlide((prev) => (prev > 0 ? prev - 1 : prev));
         }
     };
 
