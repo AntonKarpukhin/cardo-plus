@@ -9,8 +9,12 @@ import RecoverPasswordPage from './recover-password-page/recover-password-page';
 import CheckEmailPage from './check-email-page/check-email-page';
 import NewPasswordPage from './new-password-page/new-password-page';
 import CompleteNewPasswordPage from './complete-new-password-page/complete-new-password-page';
+import ProfilePage from './profile-page/profile-page';
+import ProfileSettingsPage from './profile-settings-page/profile-settings-page';
+import RegionalSelectionsPage from './regional-selections-page/regional-selections-page';
+import ProfileInformationPage from './profile-information-page/profile-information-page';
 
 export {
     StartPage, HomePage, CreateProfilePage, NotFoundPage, ErrorPage, CompleteProfilePage, LoginPage, RecoverPasswordPage, CheckEmailPage,
-    NewPasswordPage, CompleteNewPasswordPage,
+    NewPasswordPage, CompleteNewPasswordPage, ProfilePage, ProfileSettingsPage, RegionalSelectionsPage, ProfileInformationPage,
 };

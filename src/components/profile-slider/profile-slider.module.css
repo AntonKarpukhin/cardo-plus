@@ -1,0 +1,39 @@
+.ProfileSlider {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.wrapperSlider {
+    padding: 16px;
+    width: 270px;
+    border: 2px solid var(--color-red);
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.wrapperName {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    color: var(--color-red);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.date {
+    color: var(--color-gray);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Онлайн отбор на соревнования",
+    "type": "arrow",
+    "progressBar": true,
+    "link": ""
+  },
+  {
+    "name": "Видео-конкурс",
+    "type": "arrow",
+    "progressBar": true
+  },
+  {
+    "name": "Проекты: конкурс Росмолодёжь. Гранты",
+    "type": "arrow"
+  },
+  {
+    "name": "Премия",
+    "type": "noArrow"
+  },
+  {
+    "name": "Региональные отборы",
+    "type": "noArrow",
+    "startDate": "19.04.2024",
+    "endDate": "22.07.2024",
+    "link": "/regionalSelections"
+  },
+  {
+    "name": "Национальные отборы",
+    "type": "noArrow",
+    "startDate": "19.04.2024",
+    "endDate": "22.07.2024"
+  },
+  {
+    "name": "Гранд-финал",
+    "type": "noArrow",
+    "startDate": "22.08.2024",
+    "endDate": "25.08.2024"
+  }
+]

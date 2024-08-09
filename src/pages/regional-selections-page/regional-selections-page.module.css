@@ -1,0 +1,64 @@
+.RegionalSelectionsPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 44px);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title {
+    color: var(--color-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.24px;
+}
+
+.subtitle {
+    color: var(--color-gray);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text {
+    color: var(--color-black);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.wrapperLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.link {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    display: block;
+    padding: 15px 24px 17px;
+}
+
+.linkWhite {
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+}
+
+.linkRed {
+    color: var(--color-white);
+    background-color: var(--color-red);
+}

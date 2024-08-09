@@ -1,0 +1,115 @@
+.ProfileInformationPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.img {
+    margin-top: 28px;
+}
+
+.select {
+    width: 358px;
+    padding: 15px;
+    border: 1px solid var(--border-gray);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    height: 50px;
+    box-sizing: border-box;
+    background: transparent;
+    color: var(--color-gray);
+    appearance: none;
+}
+
+.select option {
+    background: var(--background-main-gray);
+}
+
+.selectContainer::after {
+    content: '';
+    position: absolute;
+    top: 450px;
+    right: 30px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    background-image: url('select-arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 40px;
+}
+
+.wrapperPersonal {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.personal {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.wrapperCheckbox {
+    display: flex;
+    gap: 12px;
+    align-items: start;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.customCheckbox {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 2px solid var(--border-gray);
+    border-radius: 3px;
+    position: relative;
+}
+
+.paragraphAccept {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.input:checked + .customCheckbox::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--border-gray);
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+}

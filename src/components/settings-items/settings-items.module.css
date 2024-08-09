@@ -1,0 +1,40 @@
+.SettingsItems {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.Link {
+    text-decoration: none;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switcher {
+    width: 40px;
+    height: 20px;
+    background: var(--color-black);
+    border-radius: 30px;
+    position: relative;
+}
+
+.span {
+    width: 16px;
+    height: 16px;
+    border-radius: 30px;
+    background: var(--color-white);
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.spanActive {
+    right: 0;
+}

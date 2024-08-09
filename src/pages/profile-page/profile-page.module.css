@@ -1,0 +1,12 @@
+.ProfilePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 46px);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}

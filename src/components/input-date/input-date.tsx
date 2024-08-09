@@ -1,15 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import DatePicker, { registerLocale, setDefaultLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { ru } from 'date-fns/locale/ru';
 import styles from './input-date.module.css';
+import { InputDateProps } from './input-date.props';
 
-const InputDate: React.FC = () => {
+const InputDate: React.FC<InputDateProps> = ({ initialDate }) => {
     const [startDate, setStartDate] = useState<Date | null>(null);
     const minDate = new Date('1900-01-01'); // Минимальная дата
     const maxDate = new Date('2100-12-31'); // Максимальная дата
     registerLocale('ru', ru);
     setDefaultLocale('ru');
+
+    useEffect(() => {
+        const isValidDate = (date: Date): boolean => !Number.isNaN(date.getTime());
+        if (initialDate && isValidDate(initialDate)) {
+            setStartDate(initialDate);
+        }
+    }, [initialDate]);
 
     return (
         <div className={styles.dateInputWrapper}>

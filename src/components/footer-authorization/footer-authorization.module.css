@@ -1,0 +1,31 @@
+.FooterAuthorizationProps {
+    height: 85px;
+    background: var(--background-footer-profile);
+    margin-bottom: -36px;
+    margin-right: -16px;
+    margin-left: -16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 32px 30px;
+    border-top: 1px solid var(--border-gray);
+}
+
+.link {
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--color-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkActive {
+    color: var(--button-red);
+}
+
+.imgActive {
+    stroke: var(--button-red);
+}

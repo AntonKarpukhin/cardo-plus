@@ -21,12 +21,20 @@ const useInput = () => {
         }
     };
 
+    const setDefaultValue = (obj: { [key: string]: any }) => {
+        Object.entries(obj).forEach(([key, value]) => {
+            if (value !== undefined) {
+                handleUsersInfo(value.toString(), key);
+            }
+        });
+    };
+
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
         const { value, dataset } = event.target;
         handleUsersInfo(value, dataset.type);
     };
 
-    return { input, handleInputChange };
+    return { input, handleInputChange, setDefaultValue };
 };
 
 export default useInput;

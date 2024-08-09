@@ -1,23 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
-    Button, HeaderAuthorization, Headlining, Input, InputDate, Paragraph,
+    Button,
+    HeaderAuthorization, Input, InputDate, Paragraph, ProfileImage,
 } from '../../components';
-import styles from './filling-profile.module.css';
+import { useProfileStore } from '../../store/profile-slice';
 import useInput from '../../hooks/useInput';
+import styles from './profile-information-page.module.css';
 
-const FillingProfile = () => {
+const ProfileInformationPage = () => {
     const [isChecked, setIsChecked] = useState<boolean>(false);
-    const { input, handleInputChange } = useInput();
+    const [gender, setGender] = useState('');
+    const [initialDate, setInitialDate] = useState<Date | null>(null);
+    const { input, handleInputChange, setDefaultValue } = useInput();
+    const { profile, getProfile } = useProfileStore();
+
+    useEffect(() => {
+        getProfile();
+    }, []);
+
+    useEffect(() => {
+        setDefaultValue(profile);
+        const getInitialDate = new Date(profile.dateOfBirth);
+        setInitialDate(getInitialDate);
+    }, [profile]);
 
     const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
         setIsChecked(event.target.checked);
     };
 
+    const handleGenderChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        setGender(event.target.value);
+    };
+
     return (
-        <section className={styles.FillingProfile}>
+        <section className={styles.ProfileInformationPage}>
             <div>
-                <HeaderAuthorization status="back" path="/createProfile" />
-                <Headlining className={styles.header} appearance="authorization" text="Заполните свой профиль" />
+                <HeaderAuthorization status="back" path="/profileSettings" text="Моя информация" />
+                <ProfileImage className={styles.img} img={profile.profilePhoto} type="information" />
                 <form className={styles.form}>
                     <div className={styles.wrapperPersonal}>
                         <Paragraph
@@ -65,6 +84,25 @@ const FillingProfile = () => {
                                 text="Нет отчества"
                             />
                         </div>
+
+                        <div className={styles.selectContainer}>
+                            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+                            <label htmlFor="gender">
+                                <select className={styles.select} id="gender" value={gender} onChange={handleGenderChange}>
+                                    <option value="">Выберите пол</option>
+                                    <option value="Мужской">Мужской</option>
+                                    <option value="Женский">Женский</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <Input
+                            type="text"
+                            datatype="country"
+                            placeholder="Страна"
+                            onChange={handleInputChange}
+                            value={input?.country || ''}
+                        />
                     </div>
                     <div className={styles.wrapperPersonal}>
                         <Paragraph
@@ -72,8 +110,31 @@ const FillingProfile = () => {
                             color="black"
                             text="Дата рождения"
                         />
-                        <InputDate />
+                        <InputDate initialDate={initialDate} />
                     </div>
+
+                    <div className={styles.wrapperPersonal}>
+                        <Paragraph
+                            className={styles.personal}
+                            color="black"
+                            text="Контактные данные"
+                        />
+                        <Input
+                            type="email"
+                            datatype="email"
+                            placeholder="Почта"
+                            onChange={handleInputChange}
+                            value={input?.email || ''}
+                        />
+                        <Input
+                            type="text"
+                            datatype="phoneNumber"
+                            placeholder="Телефон"
+                            onChange={handleInputChange}
+                            value={input?.phoneNumber || ''}
+                        />
+                    </div>
+
                     <div className={styles.wrapperPersonal}>
                         <Paragraph
                             className={styles.personal}
@@ -102,25 +163,11 @@ const FillingProfile = () => {
                             value={input?.city || ''}
                         />
                     </div>
-                    <div className={styles.wrapperPersonal}>
-                        <Paragraph
-                            className={styles.personal}
-                            color="black"
-                            text="Ссылка на соц. сеть (опционально)"
-                        />
-                        <Input
-                            type="text"
-                            datatype="network"
-                            placeholder="https://vk.com"
-                            onChange={handleInputChange}
-                            value={input?.network || ''}
-                        />
-                    </div>
                 </form>
             </div>
-            <Button path="/completeProfile" color="red" type="button" text="Продолжить" />
+            <Button path="/profile" color="red" type="button" text="Сохранить" />
         </section>
     );
 };
 
-export default FillingProfile;
+export default ProfileInformationPage;

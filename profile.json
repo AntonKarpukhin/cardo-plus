@@ -1,0 +1,16 @@
+{
+    "email": "petrp@yandex.ru",
+    "name": "Пётр",
+    "surname": "Петров",
+    "patronymic": "Петрович",
+    "noMiddleName": false,
+    "dateOfBirth": "2000-07-26",
+    "country": "Российская Федерация",
+    "region": "",
+    "city": "",
+    "phoneNumber": "",
+    "gender": "Мужской",
+    "profilePhoto": "/avatar.png",
+    "network": "",
+    "role": ""
+}

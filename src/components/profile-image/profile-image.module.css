@@ -1,0 +1,36 @@
+.ProfileImage {
+    width: 100%;
+    display: flex;
+}
+
+.ProfileImageInformation {
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.wrapperInformation {
+    align-items: start;
+    gap: 0;
+}
+
+.name {
+    color: var(--color-black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.email {
+    margin-top: 6px;
+    color: var(--color-gray);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
