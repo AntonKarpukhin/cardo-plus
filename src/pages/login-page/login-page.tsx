@@ -36,7 +36,7 @@ const LoginPage = () => {
                         value={input?.password || ''}
                     />
                 </form>
-                <Link className={styles.link} to="forgotPassword">Забыли пароль?</Link>
+                <Link className={styles.link} to="/forgotPassword">Забыли пароль?</Link>
             </div>
             <Button color="red" type="button" text="Продолжить" path="/profile" />
         </section>

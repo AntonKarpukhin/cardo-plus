@@ -12,6 +12,8 @@
     --slider-gray: rgb(219 219 217);
     --background-dark: rgb(43 43 44);
     --background-footer-profile: rgb(235 234 232);
+    --status-green: rgba(17, 177, 71, 1);
+    --alert-white: rgba(255, 255, 255, 1);
 }
 
 * {
@@ -23,7 +25,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    /* background-color: var(--background-main-gray); */
+    background-color: var(--background-main-gray);
 }
 
 @font-face {

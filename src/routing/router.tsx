@@ -17,6 +17,8 @@ const ProfilePage = lazy(() => import('../pages/profile-page/profile-page'));
 const ProfileSettingsPage = lazy(() => import('../pages/profile-settings-page/profile-settings-page'));
 const RegionalSelectionsPage = lazy(() => import('../pages/regional-selections-page/regional-selections-page'));
 const ProfileInformationPage = lazy(() => import('../pages/profile-information-page/profile-information-page'));
+const OnlineSelectionsPage = lazy(() => import('../pages/online-selesctions-page/online-selesctions-page'));
+const ResetPasswordPage = lazy(() => import('../pages/reset-password-page/reset-password-page'));
 
 export const router = createBrowserRouter([
     {
@@ -49,7 +51,7 @@ export const router = createBrowserRouter([
         errorElement: <ErrorPage />,
     },
     {
-        path: '/login/forgotPassword',
+        path: '/forgotPassword',
         element: <Suspense><RecoverPasswordPage /></Suspense>,
         errorElement: <ErrorPage />,
     },
@@ -79,6 +81,11 @@ export const router = createBrowserRouter([
         errorElement: <ErrorPage />,
     },
     {
+        path: '/onlineSelections',
+        element: <Suspense><OnlineSelectionsPage /></Suspense>,
+        errorElement: <ErrorPage />,
+    },
+    {
         path: '/regionalSelections',
         element: <Suspense><RegionalSelectionsPage /></Suspense>,
         errorElement: <ErrorPage />,
@@ -86,6 +93,11 @@ export const router = createBrowserRouter([
     {
         path: '/profileInformation',
         element: <Suspense><ProfileInformationPage /></Suspense>,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: '/resetPassword',
+        element: <Suspense><ResetPasswordPage /></Suspense>,
         errorElement: <ErrorPage />,
     },
     {

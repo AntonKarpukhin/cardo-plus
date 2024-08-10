@@ -7,7 +7,7 @@ const FooterAuthorizationProps = () => {
     return (
         <section className={styles.FooterAuthorizationProps}>
             <Link className={styles.link} to="/main">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className={styles.svg} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         className={styles.img}
                         d="M14.9953 4.36218C14.8738 4.24401 14.7282 4.15093 14.5675 4.08869C14.4067 4.02645 14.2344 3.99638
@@ -26,7 +26,7 @@ const FooterAuthorizationProps = () => {
                 Главная
             </Link>
             <Link className={styles.link} to="/ribbon">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className={styles.svg} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         className={styles.img}
                         d="M20.6664 5H6.66642C4.08909 5 1.99976 7.08934 1.99976 9.66667V19C1.99976 21.5773
@@ -49,7 +49,7 @@ const FooterAuthorizationProps = () => {
                 Лента
             </Link>
             <Link className={styles.link} to="/program">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className={styles.svg} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         className={styles.img}
                         d="M4.66675 10.5V22.1667C4.66675 22.7855 4.91258 23.379 5.35017 23.8166C5.78775
@@ -72,7 +72,7 @@ const FooterAuthorizationProps = () => {
                 })}
                 to="/profile"
             >
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className={styles.svg} width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         className={cn(styles.img, {
                             [styles.imgActive]: pathname.slice(0, 8) === '/profile',
