@@ -31,9 +31,9 @@
 @font-face {
     font-family: 'Grtsk Tera';
     src:
-        url('../public/fonts/GrtskTera-Bold.woff2') format('woff2'),
-        url('../public/fonts/GrtskTera-Bold.woff') format('woff'),
-        url('../public/fonts/GrtskTera-Bold.ttf') format('truetype');
+        url('/fonts/GrtskTera-Bold.woff2') format('woff2'),
+        url('/fonts/GrtskTera-Bold.woff') format('woff'),
+        url('/fonts/GrtskTera-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }

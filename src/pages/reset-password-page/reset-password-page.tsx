@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 import {
-    Headlining, HeaderAuthorization, Button, Input,
+    HeaderAuthorization, Button, Input,
 } from '../../components';
 import styles from './reset-password-page.module.css';
 import useInput from '../../hooks/useInput';

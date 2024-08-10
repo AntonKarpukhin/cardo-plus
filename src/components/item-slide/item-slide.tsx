@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './item-slide.module.css';
 import { ItemSlideProps } from './item-slide.props';
-import arrow from '../../../public/arrow-right.png';
 import HeaderAuthorization from '../../components/header-authorization/header-authorization';
 
 const ItemSlide: FC<ItemSlideProps> = ({
@@ -19,7 +18,7 @@ const ItemSlide: FC<ItemSlideProps> = ({
         {link && (
             <Link to="/home" className={styles.link}>
                 Начать
-                <img src={arrow} alt="Arrow" className={styles.arrow} />
+                <img src="/arrow-right.png" alt="Arrow" className={styles.arrow} />
             </Link>
         )}
     </div>
