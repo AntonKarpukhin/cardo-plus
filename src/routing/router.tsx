@@ -19,6 +19,7 @@ const RegionalSelectionsPage = lazy(() => import('../pages/regional-selections-p
 const ProfileInformationPage = lazy(() => import('../pages/profile-information-page/profile-information-page'));
 const OnlineSelectionsPage = lazy(() => import('../pages/online-selesctions-page/online-selesctions-page'));
 const ResetPasswordPage = lazy(() => import('../pages/reset-password-page/reset-password-page'));
+const SpectatorRegistrationPage = lazy(() => import('../pages/spectator-registration-page/spectator-registration-page'));
 
 export const router = createBrowserRouter([
     {
@@ -98,6 +99,11 @@ export const router = createBrowserRouter([
     {
         path: '/resetPassword',
         element: <Suspense><ResetPasswordPage /></Suspense>,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: '/spectatorRegistration',
+        element: <Suspense><SpectatorRegistrationPage /></Suspense>,
         errorElement: <ErrorPage />,
     },
     {

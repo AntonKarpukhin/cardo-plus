@@ -41,7 +41,7 @@ const OnlineSelectionsPage = () => {
                     </div>
                 ) : (
                     <>
-                        <h2 className={styles.title}>Онлайн отбор на соревнования</h2>
+                        <h2 className={styles.title}>Онлайн отбор на&nbsp;соревнования</h2>
                         <div>
                             <button
                                 type="button"
