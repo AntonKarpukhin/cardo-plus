@@ -142,19 +142,19 @@ export const organizers = [
 
 export const onlineSelection = [
     {
-        status: 'close',
+        status: 'Завершён',
         title: 'Регистрация',
         startDate: 'Начало: 19.04.2024',
         endDate: 'Конец: 22.07.2024',
     },
     {
-        status: 'waiting',
+        status: 'В ожидании',
         title: 'ТОП 24 (12)',
         startDate: 'Начало: 19.04.2024',
         endDate: 'Конец: 22.07.2024',
     },
     {
-        status: 'waiting',
+        status: 'В ожидании',
         title: 'ТОП 4 (3)',
         startDate: 'Начало: 19.04.2024',
         endDate: 'Конец: 22.07.2024',
