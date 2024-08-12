@@ -19,7 +19,7 @@ const CompleteProfilePage = () => (
                     />
                 </div>
                 <div className={styles.buttons}>
-                    <Button color="red" text="Завершить" type="button" path="/" />
+                    <Button color="red" text="Завершить" type="button" path="/home" />
                 </div>
             </div>
         </section>
