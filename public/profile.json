@@ -10,7 +10,7 @@
     "city": "",
     "phoneNumber": "",
     "gender": "Мужской",
-    "profilePhoto": "/avatar.png",
+    "profilePhoto": "avatar.png",
     "network": "",
     "role": ""
 }
