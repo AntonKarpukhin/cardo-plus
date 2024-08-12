@@ -5,6 +5,14 @@
     padding: 10px 16px 34px;
 }
 
+.LayoutMainDark {
+    background: var(--background-dark);
+}
+
+.black {
+    background: var(--background-dark);
+}
+
 @media screen and (width <= 390px) {
     .LayoutMain {
         width: 100%;

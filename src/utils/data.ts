@@ -43,3 +43,143 @@ export const testof = 'Владимирская область, Владимир
     + 'Республика Татарстан, Казань (29.06.24)\n'
     + 'Красноярский край, Красноярск (25.05.24)\n'
     + 'Кемеровская область, Кемерово (12.06.24)';
+
+export const programsData = [22, 23, 24, 25];
+
+export const oldDataResult = [2, 3, 4, 5, 6];
+
+export const oldDataInfo = [
+    {
+        directions: 4,
+        countries: 45,
+        participants: 1985,
+    },
+
+    {
+        directions: 5,
+        countries: 60,
+        participants: 2211,
+    },
+    {
+        directions: 7,
+        countries: 70,
+        participants: 2654,
+    },
+    {
+        directions: 8,
+        countries: 78,
+        participants: 2987,
+    },
+    {
+        directions: 10,
+        countries: 92,
+        participants: 3377,
+    },
+
+];
+
+export const partners = [
+    {
+        title: 'АНО <<Россия — страна возможностей>>',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
+            + 'Adipisci assumenda consequuntur cupiditate et eveniet, expedita laudantium molestiae mollitia, '
+            + 'nam omnis quasi quia, rerum voluptatum! Ducimus, molestiae, velit? Amet, eligendi, iusto.\n',
+        key: 1,
+    },
+    {
+        title: 'Правительство ставропольского края',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
+            + 'Adipisci assumenda consequuntur cupiditate et eveniet, expedita laudantium molestiae mollitia, '
+            + 'nam omnis quasi quia, rerum voluptatum! Ducimus, molestiae, velit? Amet, eligendi, iusto.\n',
+        key: 2,
+    },
+    {
+        title: 'Общероссийская организация <<Улицы России>>',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
+            + 'Adipisci assumenda consequuntur cupiditate et eveniet, expedita laudantium molestiae mollitia, '
+            + 'nam omnis quasi quia, rerum voluptatum! Ducimus, molestiae, velit? Amet, eligendi, iusto.\n',
+        key: 3,
+    },
+    {
+        title: 'Северо-Кавказский федеральный университет',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
+            + 'Adipisci assumenda consequuntur cupiditate et eveniet, expedita laudantium molestiae mollitia, '
+            + 'nam omnis quasi quia, rerum voluptatum! Ducimus, molestiae, velit? Amet, eligendi, iusto.\n',
+        key: 4,
+    },
+];
+
+export const organizers = [
+    {
+        title: 'Разгон',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
+            + 'Adipisci assumenda consequuntur cupiditate et eveniet, expedita laudantium molestiae mollitia, '
+            + 'nam omnis quasi quia, rerum voluptatum! Ducimus, molestiae, velit? Amet, eligendi, iusto.\n',
+        key: 1,
+    },
+    {
+        title: 'Кардо',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
+            + 'Adipisci assumenda consequuntur cupiditate et eveniet, expedita laudantium molestiae mollitia, '
+            + 'nam omnis quasi quia, rerum voluptatum! Ducimus, molestiae, velit? Amet, eligendi, iusto.\n',
+        key: 2,
+    },
+    {
+        title: 'Союз русских художников',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
+            + 'Adipisci assumenda consequuntur cupiditate et eveniet, expedita laudantium molestiae mollitia, '
+            + 'nam omnis quasi quia, rerum voluptatum! Ducimus, molestiae, velit? Amet, eligendi, iusto.\n',
+        key: 3,
+    },
+    {
+        title: 'PaulTheFlow',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. '
+            + 'Adipisci assumenda consequuntur cupiditate et eveniet, expedita laudantium molestiae mollitia, '
+            + 'nam omnis quasi quia, rerum voluptatum! Ducimus, molestiae, velit? Amet, eligendi, iusto.\n',
+        key: 4,
+    },
+];
+
+export const onlineSelection = [
+    {
+        status: 'close',
+        title: 'Регистрация',
+        startDate: 'Начало: 19.04.2024',
+        endDate: 'Конец: 22.07.2024',
+    },
+    {
+        status: 'waiting',
+        title: 'ТОП 24 (12)',
+        startDate: 'Начало: 19.04.2024',
+        endDate: 'Конец: 22.07.2024',
+    },
+    {
+        status: 'waiting',
+        title: 'ТОП 4 (3)',
+        startDate: 'Начало: 19.04.2024',
+        endDate: 'Конец: 22.07.2024',
+    },
+];
+
+export const testofPlace = 'Москва, Российская Федерация\n'
+    + 'Саратов, Саратовская область\n'
+    + 'Чита, Забайкальский край\n'
+    + 'Сыктывкар, Республика Коми\n'
+    + 'Барнаул, Алтайский край\n'
+    + 'Ленинградская область, г. Тосно \n'
+    + 'Нижегородская область, Нижний Новгород \n'
+    + 'Камчатский край, Петропавловск-Камчатский \n'
+    + 'Алтайский край, Барнаул \n'
+    + 'Сахалинская область, Южно-Сахалинск\n'
+    + 'Оренбургская область, Оренбург\n'
+    + 'Республика Коми, Сыктывкар \n'
+    + 'Санкт-Петербург\n'
+    + 'Челябинская область, Челябинск\n'
+    + 'Запорожская область, Мелитополь \n'
+    + 'Смоленская область, Смоленск \n'
+    + 'Ямало-Ненецкий АО, Ноябрьск \n'
+    + 'Краснодарский край, Краснодар \n'
+    + 'Кировская область, Киров\n'
+    + 'Республика Татарстан, Казань \n'
+    + 'Красноярский край, Красноярск \n'
+    + 'Кемеровская область, Кемерово';

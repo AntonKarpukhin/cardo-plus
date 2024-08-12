@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import SliderContainer from '../../containers/slider-container/slider-container';
 import styles from './start-page.module.css';
+import { LayoutMain } from '../../components';
 
 const StartPage = () => {
     const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -14,6 +15,7 @@ const StartPage = () => {
     }, []);
 
     return (
+
         <div className={styles.StartPage}>
             {isLoading && (
                 <div className={styles.loading}>
@@ -21,8 +23,13 @@ const StartPage = () => {
                     <h2 className={styles.loading_title}>Улицы. Искусство. Андеграунд.</h2>
                 </div>
             )}
-            {!isLoading && <SliderContainer />}
+            {!isLoading && (
+                <LayoutMain>
+                    <SliderContainer />
+                </LayoutMain>
+            )}
         </div>
+
     );
 };
 

@@ -10,8 +10,14 @@ import SettingsItems from './settings-items/settings-items';
 import ProfileImage from './profile-image/profile-image';
 import ProfileSlider from './profile-slider/profile-slider';
 import FooterAuthorization from './footer-authorization/footer-authorization';
+import ProgramsButtonDate from './programs-button-date/programs-button-date';
+import ProgramsCard from './programs-card/programs-card';
+import ProgramsPopup from './programs-popup/programs-popup';
+import CountTimer from './count-timer/count-timer';
+import Accordion from './accordion/accordion';
 
 export {
     Paragraph, Input, Button, LayoutMain, Headlining, HeaderAuthorization,
-    InputDate, Loading, SettingsItems, ProfileImage, ProfileSlider, FooterAuthorization,
+    InputDate, Loading, SettingsItems, ProfileImage, ProfileSlider, FooterAuthorization, ProgramsButtonDate,
+    ProgramsCard, ProgramsPopup, CountTimer, Accordion,
 };

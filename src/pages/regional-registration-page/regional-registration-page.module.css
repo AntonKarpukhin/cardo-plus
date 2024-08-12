@@ -1,0 +1,288 @@
+.ApplicationRegistrationPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.wrapperPersonal {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.wrapperCheckboxPatronymic {
+    display: flex;
+    gap: 12px;
+    align-items: start;
+}
+
+.labelPatronymic {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.inputPatronymic {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.customCheckboxPatronymic {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 2px solid var(--border-gray);
+    border-radius: 3px;
+    position: relative;
+}
+
+.paragraphAccept {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.inputPatronymic:checked + .customCheckboxPatronymic::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--border-gray);
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+}
+
+.title {
+    color: var(--color-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    margin-top: 28px;
+}
+
+.place {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 28px;
+}
+
+.selectContainerCountry {
+    width: 100%;
+}
+
+.dropdownLabel {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dropdownToggle {
+    cursor: pointer;
+    padding: 11px 16px;
+    background-color: transparent;
+    color: var(--color-gray);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    border: 2px solid var(--color-red);
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdownToggle:focus {
+    outline: none;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 6px;
+    padding: 11px 16px 20px;
+    background-color: var(--background-main-gray);
+    border: 2px solid var(--color-red);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+    z-index: 1000;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.dropdownItem {
+    padding: 10px 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dropdownItem:hover {
+    background-color: var(--hover-gray);
+}
+
+.dropdownItem:focus {
+    background-color: var(--hover-gray);
+}
+
+.wrapperRadio {
+    display: flex;
+    flex-direction: column;
+}
+
+.radioLabel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 0;
+}
+
+.customCheckboxInput {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.customCheckbox {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--checkbox-gray);
+    background-color: var(--checkbox-gray);
+    border-radius: 50%;
+    position: relative;
+    margin-left: 8px;
+}
+
+.customCheckboxInput:checked + .customCheckbox {
+    background-color: var(--border-gray);
+}
+
+.customCheckboxInput:checked + .customCheckbox::after {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    width: 21px;
+    height: 21px;
+    background: url('Checkmark.png');
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.radioText {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-black);
+}
+
+.warning {
+    position: absolute;
+    background-color: var(--color-red-error);
+    color: var(--alert-white);
+    padding: 16px 20px;
+    width: 100%;
+    max-width: 358px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subtitile {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.select {
+    width: 358px;
+    padding: 15px;
+    border: 1px solid var(--border-gray);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    height: 50px;
+    box-sizing: border-box;
+    background: transparent;
+    color: var(--color-gray);
+    appearance: none;
+}
+
+.select option {
+    background: var(--background-main-gray);
+}
+
+.selectwrapper {
+    max-width: 100%;
+    position: relative;
+}
+
+.selectContainer {
+    max-width: 100%;
+}
+
+.selectContainer::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 11px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    background-image: url('select-arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.addButton {
+    padding: 0;
+    margin: 0 0 291px;
+    text-decoration: underline;
+    border: none;
+    width: max-content;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: Rubik, sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+}

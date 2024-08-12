@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import {
     FooterAuthorization,
-    HeaderAuthorization, ProfileImage, ProfileSlider, SettingsItems,
+    HeaderAuthorization, LayoutMain, ProfileImage, ProfileSlider, SettingsItems,
 } from '../../components';
 import { profileData } from '../../utils/data';
 import styles from './profile-page.module.css';
@@ -18,15 +18,17 @@ const ProfilePage = () => {
     }, []);
 
     return (
-        <section className={styles.ProfilePage}>
-            <div className={styles.wrapper}>
-                <HeaderAuthorization text="Профиль" />
-                <ProfileImage img={profile.profilePhoto} type="profile" name={profile.name} email={profile.email} />
-                <ProfileSlider sliderItems={selections} />
-                <SettingsItems items={profileData} />
-            </div>
-            <FooterAuthorization />
-        </section>
+        <LayoutMain>
+            <section className={styles.ProfilePage}>
+                <div className={styles.wrapper}>
+                    <HeaderAuthorization text="Профиль" />
+                    <ProfileImage img={profile.profilePhoto} type="profile" name={profile.name} email={profile.email} />
+                    <ProfileSlider sliderItems={selections} />
+                    <SettingsItems items={profileData} />
+                </div>
+                <FooterAuthorization />
+            </section>
+        </LayoutMain>
     );
 };
 
