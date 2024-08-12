@@ -41,7 +41,7 @@ module.exports = {
         'no-underscore-dangle': 'off',
         'max-len': ['error', { ignoreComments: true, ignoreUrls: true, code: 150 }],
         'react/prop-types': 0,
-        'linebreak-style': ['error', 'windows'],
+        'linebreak-style': 0,
         'no-plusplus': 'off',
         'button-has-type': 'off',
         "jsx-a11y/label-has-associated-control": ["error", {
