@@ -22,6 +22,7 @@
 .loading_logo {
     margin: 140px 0 0;
     width: 100%;
+    background: none;
 }
 
 .loading_title {
@@ -33,4 +34,5 @@
     line-height: normal;
     text-align: center;
     margin: 0 auto 159px;
+    background: none;
 }

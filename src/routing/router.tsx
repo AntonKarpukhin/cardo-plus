@@ -20,6 +20,7 @@ const ProfileInformationPage = lazy(() => import('../pages/profile-information-p
 const OnlineSelectionsPage = lazy(() => import('../pages/online-selesctions-page/online-selesctions-page'));
 const ResetPasswordPage = lazy(() => import('../pages/reset-password-page/reset-password-page'));
 const SpectatorRegistrationPage = lazy(() => import('../pages/spectator-registration-page/spectator-registration-page'));
+const ApplicationRegistrationPage = lazy(() => import('../pages/application-registration-page/application-registration-page'));
 
 export const router = createBrowserRouter([
     {
@@ -104,6 +105,11 @@ export const router = createBrowserRouter([
     {
         path: '/spectatorRegistration',
         element: <Suspense><SpectatorRegistrationPage /></Suspense>,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: '/applicationRegistration',
+        element: <Suspense><ApplicationRegistrationPage /></Suspense>,
         errorElement: <ErrorPage />,
     },
     {

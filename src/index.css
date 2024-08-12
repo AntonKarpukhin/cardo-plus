@@ -14,6 +14,8 @@
     --background-footer-profile: rgb(235 234 232);
     --status-green: rgba(17, 177, 71, 1);
     --alert-white: rgba(255, 255, 255, 1);
+    --hover-gray: rgba(226, 226, 226, 1);
+    --checkbox-gray: rgba(227, 226, 225, 1);
 }
 
 * {

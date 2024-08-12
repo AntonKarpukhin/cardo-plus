@@ -27,7 +27,7 @@ const SpectatorRegistrationPage = () => {
     return (
         <section className={styles.SpectatorPage}>
             <div>
-                <HeaderAuthorization status="back" path="/profileSettings" text="Москва" />
+                <HeaderAuthorization status="back" path="/regionalSelections" text="Москва" />
                 <h2 className={styles.title}>Заявка на регистрацию зрителя</h2>
                 <form className={styles.form}>
                     <div className={styles.wrapperPersonal}>
