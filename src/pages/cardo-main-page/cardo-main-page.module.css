@@ -1,0 +1,423 @@
+.CardoMainPage {
+    margin: 0 auto;
+    width: 390px;
+}
+
+.logo {
+    padding: 10px 16px 0;
+    background: black;
+}
+
+.bmx {
+    background: var(--background-dark);
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-top: 17px;
+    color: var(--color-red);
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-white);
+    margin-top: 41px;
+    text-align: center;
+}
+
+.button {
+    border: 2px solid var(--color-red);
+    padding: 14px 20px;
+    background: var(--background-dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-white);
+    margin-top: 20px;
+}
+
+.wrapperButtonIcon {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.buttonIcon {
+    border: none;
+    display: block;
+    text-decoration: none;
+}
+
+.timer {
+    padding: 30px 16px;
+    background: var(--color-red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timerTitle {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--color-white);
+}
+
+.mission {
+    padding: 30px 16px 0;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.missionTitle {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-black);
+}
+
+.missionSubtitle {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-black);
+    margin-top: 10px;
+}
+
+.missionWrapperCharitable {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.missionCharitable {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-black);
+}
+
+.missionFund {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-black);
+}
+
+.missionGoals {
+    margin-top: 40px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-red);
+}
+
+.missionGoalsSubtitle {
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-black);
+}
+
+.prize {
+    padding: 40px 16px 0;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.prizeWrapperCharitable {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.prizeWrapperCharitableTitle {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-red);
+}
+
+.prizeWrapperCharitableSubTitle {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-red);
+}
+
+.prizeFrom {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-red);
+}
+
+.prizeFromSubtitle {
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-black);
+}
+
+.prizeWrapperMore {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.prizeMore {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-black);
+}
+
+.prizeImgStreets {
+    margin-top: 40px;
+}
+
+.data {
+    padding: 40px 16px 0;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapperData {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.dataSum {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-red);
+}
+
+.dataSumDescr {
+    margin-top: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-red);
+}
+
+.dataResult {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dataResultLen {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-black);
+}
+
+.dataResultArr {
+    display: flex;
+    gap: 8px;
+}
+
+.dataResultButton {
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-gray);
+}
+
+.dataResultButtonActive {
+    color: var(--color-red);
+}
+
+.dataResult2 {
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+}
+
+.dataWrapperForecast {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dataWrapperForecast2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.dataForecastTitle {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-red);
+}
+
+.dataForecastSubTitle {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-red);
+}
+
+.partners {
+    padding: 40px 16px 10px;
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.partnersTitle {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--color-red);
+}
+
+.partnerssubTitle {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--color-red);
+}
+
+.partnersWrapperButton {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.partnersButton {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-black);
+    border: none;
+}
+
+.partnersButtonActive {
+    color: var(--color-red);
+    border-bottom: 2px solid var(--color-red);
+}
+
+.footer {
+    padding: 20px 16px 105px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footerTitle {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-gray);
+    margin-bottom: 10px;
+}
+
+.footerSubTitle {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-gray);
+    margin-top: 4px;
+}
+
+.footerWrapperInfo2 {
+    margin-top: 25px;
+}
+
+.footerButton {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+}
+
+.footerWrapperEmail {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footerEmail {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-white);
+}
+
+@media screen and (width <= 390px) {
+    .LayoutMain {
+        width: 100%;
+    }
+
+    .bmxImg {
+        width: 100%;
+    }
+}

@@ -11,6 +11,7 @@ const HeaderAuthorization = ({
         ? '/arrow-back.svg' : 'icon-close.svg';
     const imgAlt = status === 'back'
         ? 'Назад' : 'Закрыть';
+
     return (
         <div className={cn(styles.HeaderAuthorization, className)} {...props}>
             {status && <Link to={path} className={styles.button}><img src={imgView} alt={imgAlt} /></Link>}

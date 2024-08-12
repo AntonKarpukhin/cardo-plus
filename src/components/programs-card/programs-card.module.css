@@ -1,0 +1,49 @@
+.ProgramsCard {
+    border: 2px solid var(--color-red);
+    padding: 16px;
+    background: transparent;
+    text-decoration: none;
+    text-align: left;
+}
+
+.date {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-white);
+}
+
+.title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-red);
+    margin-top: 4px;
+}
+
+.wrapperLocation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.direction {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color-white);
+    margin-top: 4px;
+}
+
+.location {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-white);
+}

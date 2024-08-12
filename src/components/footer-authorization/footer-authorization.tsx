@@ -1,15 +1,35 @@
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import cn from 'classnames';
+import { useEffect, useState } from 'react';
 import styles from './footer-authorization.module.css';
+import { FooterAuthorizationProps2 } from './footer-authorization.props';
 
-const FooterAuthorizationProps = () => {
+const FooterAuthorizationProps = ({ className, ...props }: FooterAuthorizationProps2) => {
     const { pathname } = useLocation();
+    const [loacation, setLoacation] = useState<string>('');
+
+    useEffect(() => {
+        setLoacation(pathname);
+    }, [pathname]);
+
     return (
-        <section className={styles.FooterAuthorizationProps}>
-            <Link className={styles.link} to="/main">
+        <section
+            className={cn(styles.FooterAuthorizationProps, className, {
+                [styles.FooterAuthorizationPropsDark]: loacation === '/program' || loacation === '/cardo',
+            })}
+            {...props}
+        >
+            <Link
+                className={cn(styles.link, {
+                    [styles.linkActive]: pathname.slice(0, 6) === '/cardo',
+                })}
+                to="/cardo"
+            >
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                        className={styles.img}
+                        className={cn(styles.img, {
+                            [styles.imgActive]: pathname.slice(0, 6) === '/cardo',
+                        })}
                         d="M14.9953 4.36218C14.8738 4.24401 14.7282 4.15093 14.5675 4.08869C14.4067 4.02645 14.2344 3.99638
                         14.061 4.00035C13.8876 4.00432 13.7169 4.04224 13.5595 4.11176C13.4021 4.18128 13.2614 4.28092 13.1459
                         4.4045L5.32173 12.7722C5.11451 12.9938 4.99998 13.2805 5 13.5776V22.7906C5 23.1114 5.13345 23.419 5.371
@@ -48,10 +68,17 @@ const FooterAuthorizationProps = () => {
                 </svg>
                 Лента
             </Link>
-            <Link className={styles.link} to="/program">
+            <Link
+                className={cn(styles.link, {
+                    [styles.linkActive]: pathname.slice(0, 8) === '/program',
+                })}
+                to="/program"
+            >
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                        className={styles.img}
+                        className={cn(styles.img, {
+                            [styles.imgActive]: pathname.slice(0, 8) === '/program',
+                        })}
                         d="M4.66675 10.5V22.1667C4.66675 22.7855 4.91258 23.379 5.35017 23.8166C5.78775
                         24.2542 6.38124 24.5 7.00008 24.5H21.0001C21.6189 24.5 22.2124 24.2542 22.65 23.8166C23.0876
                         23.379 23.3334 22.7855 23.3334 22.1667V10.5M4.66675 10.5V8.16667C4.66675 7.54783 4.91258 6.95434

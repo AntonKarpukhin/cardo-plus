@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { NotFoundPage, ErrorPage } from '../pages';
-import { Loading } from '../components';
 
 const StartPage = lazy(() => import('../pages/start-page/start-page'));
 const HomePage = lazy(() => import('../pages/home-page/home.page'));
@@ -17,6 +16,13 @@ const ProfilePage = lazy(() => import('../pages/profile-page/profile-page'));
 const ProfileSettingsPage = lazy(() => import('../pages/profile-settings-page/profile-settings-page'));
 const RegionalSelectionsPage = lazy(() => import('../pages/regional-selections-page/regional-selections-page'));
 const ProfileInformationPage = lazy(() => import('../pages/profile-information-page/profile-information-page'));
+const ProgramsPage = lazy(() => import('../pages/programs-page/programs-page'));
+const CardoMainPage = lazy(() => import('../pages/cardo-main-page/cardo-main-page'));
+const RibbonPage = lazy(() => import('../pages/ribbon-page/ribbon-page'));
+const ResetPaswordPage = lazy(() => import('../pages/reset-pasword-page/reset-pasword-page'));
+const SpectatorRegistrationPage = lazy(() => import('../pages/spectator-registration-page/spectator-registration-page'));
+const OnlineSelectionPage = lazy(() => import('../pages/online-selection-page/online-selection-page'));
+const RegionalRegistrationPage = lazy(() => import('../pages/regional-registration-page/regional-registration-page'));
 
 export const router = createBrowserRouter([
     {
@@ -26,7 +32,6 @@ export const router = createBrowserRouter([
     {
         path: '/home',
         element: <Suspense><HomePage /></Suspense>,
-        // element: <Suspense fallback={<Loading />}><HomePage /></Suspense>,
     },
     {
         path: '/createProfile',
@@ -86,6 +91,41 @@ export const router = createBrowserRouter([
     {
         path: '/profileInformation',
         element: <Suspense><ProfileInformationPage /></Suspense>,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: '/program',
+        element: <Suspense><ProgramsPage /></Suspense>,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: '/cardo',
+        element: <Suspense><CardoMainPage /></Suspense>,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: '/ribbon',
+        element: <Suspense><RibbonPage /></Suspense>,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: '/resetPassword',
+        element: <Suspense><ResetPaswordPage /></Suspense>,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: '/spectatorRegistration',
+        element: <Suspense><SpectatorRegistrationPage /></Suspense>,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: '/profile/onlineSelectionPage',
+        element: <Suspense><OnlineSelectionPage /></Suspense>,
+        errorElement: <ErrorPage />,
+    },
+    {
+        path: '/regionalRegistration',
+        element: <Suspense><RegionalRegistrationPage /></Suspense>,
         errorElement: <ErrorPage />,
     },
     {

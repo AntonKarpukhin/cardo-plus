@@ -1,13 +1,18 @@
 .FooterAuthorizationProps {
     height: 85px;
     background: var(--background-footer-profile);
-    margin-bottom: -36px;
-    margin-right: -16px;
-    margin-left: -16px;
     display: flex;
     justify-content: space-between;
     padding: 4px 32px 30px;
     border-top: 1px solid var(--border-gray);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.FooterAuthorizationPropsDark {
+    background: var(--background-dark);
 }
 
 .link {

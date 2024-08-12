@@ -1,0 +1,145 @@
+.OnlineSelectionPage {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 46px);
+}
+
+.titleMain {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    color: var(--color-black);
+}
+
+.OnlineSelectionPageOpen {
+    height: calc(100vh + 110px);
+}
+
+.accordionWrapper {
+    margin-top: 16px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.accordionButton {
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20px;
+    color: var(--color-black);
+    text-align: left;
+    background-color: transparent;
+}
+
+.accordionSpanOpen {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--color-black);
+    margin-top: 8px;
+}
+
+.wrapperInfo {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.wrapper {
+    padding: 16px;
+    border: 2px solid var(--color-red);
+}
+
+.radius {
+    width: 11px;
+    height: 11px;
+    background-color: var(--color-gray);
+    border-radius: 50%;
+}
+
+.radiusComplete {
+    background-color: green;
+}
+
+.wrapperImg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapperStatus {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title {
+    margin-top: 16px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-red);
+}
+
+.date {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-gray);
+    margin-top: 6px;
+}
+
+.button {
+    width: 326px;
+    height: 42px;
+    border: 2px solid var(--color-red);
+    background: transparent;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color-red);
+    margin-top: 18px;
+}
+
+.popupTitle {
+    margin-top: 30px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    color: var(--color-black);
+}
+
+.popupSubTitle {
+    margin-top: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--color-black);
+}
+
+.popupWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popupButton {
+    margin-top: 10px;
+    background-color: transparent;
+    border: 2px solid var(--color-red);
+    width: 250px;
+    height: 25px;
+    color: var(--color-red);
+}

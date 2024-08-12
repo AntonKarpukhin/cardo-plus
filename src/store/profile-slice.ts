@@ -12,7 +12,7 @@ type profileActions = {
     setProfile: (profile: IUserProfile) => void;
 };
 
-const profileSlice: StateCreator<profileState & profileActions, [['zustand/devtools', never]]> = (set, get) => ({
+const profileSlice: StateCreator<profileState & profileActions, [['zustand/devtools', never]]> = (set) => ({
     profile: { email: '', name: '', surname: '' },
     getProfile: async () => {
         try {

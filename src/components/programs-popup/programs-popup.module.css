@@ -1,0 +1,75 @@
+.ProgramsPopup {
+    background-color: var(--color-white);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
+    width: 330px;
+}
+
+.wrapperTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-red);
+    width: 260px;
+}
+
+.close {
+    border: none;
+}
+
+.date,
+.span,
+.direction {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color-black);
+    margin-top: 4px;
+}
+
+.location {
+    margin-top: 4px;
+    color: var(--color-black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.description {
+    margin-top: 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color-black);
+}
+
+.wrapperButton {
+    margin-top: 32px;
+    width: 100%;
+}
+
+.link {
+    display: block;
+    height: 42px;
+    text-decoration: none;
+    padding: 12px 70px;
+    background: var(--color-red);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color-white);
+    border: none;
+    text-align: center;
+}

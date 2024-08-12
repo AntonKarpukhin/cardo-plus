@@ -1,0 +1,14 @@
+.ProgramsButtonDate {
+    background: transparent;
+    border: 2px solid var(--color-red);
+    color: var(--color-white);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 15px 13px;
+}
+
+.active {
+    background: var(--color-red);
+}
