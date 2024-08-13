@@ -46,3 +46,4 @@ npm run build
 ## Команда проекта
 
 - [Карпухин Антон](https://t.me/LembrarB) — Front-End Developer
+- [Татьяна Каткова](https://t.me/muakatkova) — Front-End Developer
